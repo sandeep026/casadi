@@ -849,7 +849,7 @@ namespace casadi {
 
     v[0] = first;
     for (unsigned i=1; i<v.size()-1; ++i)
-      v[i] = v[i-1] + increment;
+      v[i] = first + i*increment;
     v[v.size()-1] = last;
   }
 
